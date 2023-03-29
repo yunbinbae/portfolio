@@ -1,0 +1,110 @@
+/* ///////////////////////// SETTING ///////////////////////// */
+body {
+  background-color: #FFFFFF;
+}
+
+section {
+  display: block;
+  margin-bottom: 14rem;
+}
+
+/* img {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+} */
+
+
+li {
+  list-style: none;
+}
+
+.img {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.method-margin-bottom {
+  padding-bottom: 4rem;
+}
+
+.header {
+  margin-bottom: 1.4rem;
+}
+
+.side-margin {
+  margin: 0 42rem;
+}
+
+.side-nav-lists {
+  font-family: baskerville-urw, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  gap: 1.6rem;
+  list-style: none;
+  text-align: left;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+.side-nav-list {
+  font-family: baskerville-urw, serif;
+  align-items: center;
+}
+
+.side-nav-link {
+  font-family: baskerville-urw, serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.side-nav-link:link,
+.side-nav-link:visited {
+  text-decoration: none;
+  color: #929286;
+  transition: all 0.08s ease-in-out;
+}
+
+.side-nav-link:hover,
+.side-nav-link:active {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #eb6641;
+  cursor: pointer;
+  transition: all 0.08s ease-in-out;
+}
+
+.side-nav-icon {
+  height: 0.8rem;
+  width: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  font-weight: 500;
+  color: #575755;
+  transition: all 0.08s ease-in-out;
+}
+
+.link:hover,
+.link:active {
+  text-decoration: none;
+  color: #eb6641;
+  transition: all 0.08s ease-in-out;
+}
+
+.logo {
+  display: block;
+  width: 18%;
+}
+
+.footer-logo {
+  display: block;
+  width: 35%;
+}

@@ -1,0 +1,151 @@
+main {
+  margin-top: 16rem;
+}
+
+.header {
+  margin-bottom: 9.6rem;
+}
+
+.content {
+  margin: 0 16rem;
+}
+
+.project-content {
+  margin-bottom: 6.4rem;
+}
+
+.project-name {
+  font-size: 3.6rem;
+  color: #1e1e1e;
+}
+
+.project-name-title {
+  display: block;
+  margin-bottom: 3.2rem;
+  font-weight: 800;
+}
+
+.project-name:link,
+.project-name:visited {
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: all 0.08s ease-in;
+}
+
+.project-name:hover,
+.project-name:active {
+  color: #ffe45e;
+  -webkit-text-stroke: 0.15rem black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-info {
+  font-family: 'Nunito Sans', sans-serif;
+  display: block;
+  width: 80%;
+  color: #1e1e1e;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-bottom: 0.8rem;
+}
+
+.heading-secondary {
+  font-family: baskerville-urw, serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 4.4rem;
+  display: block;
+  margin-bottom: 4.8rem;
+}
+
+.link:link,
+.link:visited {
+  color: #f9f9f9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.08s ease-in;
+}
+
+.link:hover,
+.link:active {
+  color: #ff6392;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-focus-areas {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.project-focus-area {
+  display: block;
+  font-size: 1.2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-bottom: 0;
+}
+
+.button {
+  font-family: 'Nunito Sans', sans-serif;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+/* .display-block {
+  display: block;
+  margin-bottom: 1.2rem;
+} */
+
+.anchor-to-paper {
+  font-family: baskerville-urw, serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2rem;
+  display: block;
+}
+
+.anchor-to-paper:link,
+.anchor-to-paper:visited {
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: all 0.08s ease-in;
+}
+
+.anchor-to-paper:hover,
+.anchor-to-paper:active {
+  color: #ffe45e;
+  -webkit-text-stroke: 0.04rem black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.code-project-infos {
+  display: block;
+  padding: 1.2rem;
+}
+
+.code-project-info {
+  display: block;
+  padding: 1.2rem;
+}
+
+.code-project-info:link,
+.code-project-info:visited {
+  text-decoration: none;
+}
+
+.code-project-info:hover,
+.code-project-info:active {
+  color: #ffe45e;
+  -webkit-text-stroke: 0.04rem black;
+  cursor: pointer;
+  text-decoration: none;
+}

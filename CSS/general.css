@@ -1,0 +1,342 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-Bold: 600
+Bold: 700
+Black: 800 (Home Hero Title only)
+
+- Line heights
+Default: 1
+Small: 
+Medium: 
+Paragraph default: 1.5
+
+- Letter Spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+
+- Primary: #F161FE
+- Tints: 
+- Shades: 
+- Accents:
+- Greys: #E0E0E0 #F5F5F5
+- Black:  #1E1E1E
+- White: #FFFFFF
+
+--- 05 SHADOWS
+
+--- 06 BORDER_RADIUS
+
+--- 07 WHITESPACE
+
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  background-color: #F5F5F5;
+  scroll-behavior: smooth;
+  /* DOES NOT work on Safari => write in Javascript..*/
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  /* line-height: 1; */
+  overflow-x: hidden;
+  color: #000000;
+}
+
+main {
+  margin-bottom: 12.8rem;
+  min-height: 100vh; /* minus the height of the footer */
+}
+
+p {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 2.8;
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.header {
+  margin-bottom: 0;
+}
+
+/* body {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/assets/images/header-home-removebg.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+} */
+
+.logo {
+  display: block;
+  width: 18%;
+}
+
+main {
+  margin: 10rem 6rem;
+}
+
+.container {
+  /* 120rem 혹은 1140px 가 디폴트*/
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 9.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 1.5rem;
+}
+
+/* .grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+} */
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center--v {
+  align-items: center;
+}
+
+
+/* ************************************ */
+/* FOOTER */
+/* ************************************ */
+
+.footer {
+  padding: 4.8rem 0 4.8rem 0;
+  background-color: #000000;
+}
+
+.footer-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 41.5rem;
+}
+
+/* .logo-copyright { 
+  justify-content: center;
+  align-items: center;
+} */
+
+.footer-logo {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.copyright-name {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #E0E0E0;
+  margin-bottom: 0.6rem;
+  text-align: center;
+  line-height: 3.2rem;
+}
+
+
+.footer-nav {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  color: #E0E0E0;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #E0E0E0;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #E0E0E0;
+  transition: all 0.08s ease-in;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #F161FE;
+}
+
+/* ************************************ */
+/* HEADER */
+/* ************************************ */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 20rem 0 3.2rem;
+  color: #000000;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4.8rem;
+  list-style: none;
+  text-align: center;
+}
+
+.header-link {
+  font-size: 1.2rem;
+}
+
+.header-link:link,
+.header-link:visited {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: 300;
+  transition: all 0.08s ease-in-out;
+}
+
+.header-link:hover,
+.header-link:active {
+  color: #F161FE;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/* *********STICKY NAVIGATION (Desktop ver.) *********** */
+
+.logo {
+  display: block;
+  width: 18%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #F5F5F5;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.01);
+}
+
+.side-nav {
+  position: fixed;
+  left: 3rem;
+  top: 30rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 999;
+}
+
+.side-nav-lists {
+  margin-bottom: 3.2rem;
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+/* ***********BURGER 햄버거 메뉴**************** */
+
+.btn-mobile-nav {
+  border: none;
+  background-color: #F5F5F5;
+  /* background-cursor: pointer; */
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #000000;
+}
+
+/* attribute에 따라서 선택할 수 있음 */
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+
+/* ************************************ */
+/* EFFECTS */
+/* ************************************ */
+
+.link:link,
+.link:visited {
+  color: #f9f9f9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.08s ease-in;
+}
+
+.link:hover,
+.link:active {
+  color: #F161FE;
+  text-decoration: none;
+}
+
+::-moz-selection {
+  background: #000000;
+  color: #f9f9f9;
+}
+::selection {
+  background: #000000;
+  color: #f9f9f9;
+}

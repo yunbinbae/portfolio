@@ -1,0 +1,64 @@
+.love {
+  margin: 12rem 9.6rem;
+}
+
+.header {
+  margin-bottom: 3.2rem;
+}
+
+.love-header-margin {
+  display: block;
+  margin-bottom: 9.2rem;
+  width: 50%;
+}
+
+.heading-secondary {
+  display: block;
+  font-size: 3.2rem;
+}
+
+.community-detail {
+  margin-bottom: 9.6rem;
+}
+
+.love-shots {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6.4rem;
+  padding: 0 0 12.8rem 0;
+  /* overflow: hidden; */
+  /* border-radius: 1rem; */
+}
+
+.love-shot {
+  text-decoration: none;
+  /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.04); */
+  padding: 0.8rem;
+  border-radius: 1.2rem;
+}
+
+.love img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.love img:hover {
+  transform: scale(2);
+}
+
+.link:link,
+.link:visited {
+  color: #5aa9e6;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 0.08s ease-in;
+}
+
+.link:hover,
+.link:active {
+  color: #ff6392;
+  cursor: pointer;
+  transition: all 0.08s ease-in;
+}
